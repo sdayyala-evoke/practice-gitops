@@ -8,14 +8,14 @@ spec:
   selector:
     matchLabels:
       app: globomantics
-    template:
-      metadata:
-        labels: 
-          app: globomantics
-      spec: 
-        containers:
-        - name: globomantics
-          image: nginx:1.27.5
-          ports:
-          - containerPort: 80 
+  template:
+    metadata:
+      labels: 
+        app: globomantics
+    spec: 
+      containers:
+      - name: globomantics
+        image: nginx:1.27.5
+        ports:
+        - containerPort: 80 
 
